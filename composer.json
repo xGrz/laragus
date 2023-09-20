@@ -1,0 +1,30 @@
+{
+    "name": "xgrz/laragus",
+    "description": "Laravel package for GUS Api. Get polish company names and addresses by vat id`s",
+    "keywords": ["framework", "laravel", "gus"],
+    "require": {
+        "gusapi/gusapi": "^6.1",
+        "php": "^8.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "xGrz\\LaraGus\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "xGrz\\LaraGus\\LaraGusServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "grzesiek",
+            "email": "grzesiek.byskiniewicz@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable" : true
+}
