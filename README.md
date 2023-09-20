@@ -1,4 +1,4 @@
-# Laravel Gus Data Fetcher
+# LaraGus
 Based on gusapi/gusapi package. Adapted to the Laravel environment for easy integration.
 
 ## Installation
