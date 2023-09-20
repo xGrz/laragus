@@ -2,7 +2,9 @@
 Based on gusapi/gusapi package. Adapted to the Laravel environment for easy integration.
 
 ## Installation
-> composer require xgrz/laravel-gus-data-fetcher
+```
+composer require xgrz/laravel-gus-data-fetcher
+```
 
 ## API Key (required)
 This package requires api key. You can get it from GUS for free. 
@@ -57,9 +59,11 @@ Typical request should be like:
 ## Configuration
 
 To be able to change the default behavior please publish config by executing command:
-> php artisan vendor:publish --provider="Xgrz\LaravelGusDataFetcher\LaraGusServiceProvider"
+```
+ php artisan vendor:publish --provider="xGrz\LaraGus\LaraGusServiceProvider"
+```
 
-Config file will be placed in your config app directory (/config/gusdata.php).
+Config file will be placed in your config app directory (/config/laragus.php).
 
 ### Block api exposition:
 ``` 
