@@ -3,7 +3,7 @@ Based on gusapi/gusapi package. Adapted to the Laravel environment for easy inte
 
 ## Installation
 ```
-composer require xgrz/laravel-gus-data-fetcher
+composer require xgrz/laragus
 ```
 
 ## API Key (required)
