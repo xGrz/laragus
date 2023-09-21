@@ -3,6 +3,7 @@
 namespace xGrz\LaraGus\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use GusApi\Exception\InvalidUserKeyException;
 use xGrz\LaraGus\Exceptions\DataNotFoundException;
 use xGrz\LaraGus\Exceptions\InvalidApiKeyException;
 use xGrz\LaraGus\Exceptions\InvalidVatIdNumberException;

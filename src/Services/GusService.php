@@ -30,7 +30,7 @@ class GusService
     {
         self::setVatId($vat_id);
         $this->data = new Collection();
-        $this->gus = new GusApi(env('GUS_API_KEY'));
+        $this->gus = new GusApi(env('GUS_API_KEY', 'abcde12345abcde12345'));
         self::fetch();
     }
 
@@ -48,7 +48,12 @@ class GusService
                 $this->data->push(CompanyData::fromGusSearch($report));
             }
         } catch (InvalidUserKeyException $e) {
-            throw new InvalidApiKeyException('Invalid api key.');
+
+            if (!env('GUS_API_KEY')) {
+                throw new InvalidApiKeyException('API key not found. Please set valid GUS_API_KEY in your .env file.');
+            }
+
+            throw new InvalidApiKeyException('Invalid api key. ');
         } catch (NotFoundException $e) {
             if ($e->getCode() === 0) {
                 throw new DataNotFoundException($e->getMessage());
