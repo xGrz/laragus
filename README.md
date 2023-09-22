@@ -86,7 +86,7 @@ Set your own url for api calls.
 
 ### Use laravel middleware for protecting route:
 ``` 
-'middleware' => ['auth']    // default is [] - no middlewares
+'middleware' => ['web', 'auth']    // default is ['web'] - no middlewares
 ```
 Protect route with your own laravel middleware. 
 
