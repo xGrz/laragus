@@ -60,7 +60,7 @@ Typical request should be like:
 
 To be able to change the default behavior please publish config by executing command:
 ```
- php artisan vendor:publish --provider="xGrz\LaraGus\LaraGusServiceProvider"
+ php artisan vendor:publish vendor:publish --tag="laragus-config"
 ```
 
 Config file will be placed in your config app directory (/config/laragus.php).
