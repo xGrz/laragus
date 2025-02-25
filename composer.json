@@ -4,6 +4,7 @@
     "keywords": ["framework", "laravel", "gus"],
     "require": {
         "gusapi/gusapi": "^6.1",
+        "laravel/framework": "^10.0|^11.0|^12.0",
         "php": "^8.2"
     },
     "license": "MIT",
